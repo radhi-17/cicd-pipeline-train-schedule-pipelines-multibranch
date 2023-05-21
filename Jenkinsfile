@@ -1,6 +1,11 @@
 pipeline {
   agent any
   stages {
+    stage ('Git') {
+     steps {
+       echo 'clone the repo'
+     }
+   }
     stage ('Build') {
       steps {
         echo 'Running build automation'

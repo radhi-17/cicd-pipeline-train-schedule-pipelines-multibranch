@@ -4,6 +4,7 @@ pipeline {
     stage ('Git') {
      steps {
        echo 'clone the repo'
+       echo 'gradle view'
      }
    }
     stage ('Build') {
